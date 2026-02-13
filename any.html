@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>듀오버스 가격표 | SAKURA TEAM</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { margin:0; font-family:Pretendard, Arial, sans-serif; background:#0e0e0e; color:#fff; }
-    header{position:fixed;top:0;width:100%;background:#111;border-bottom:1px solid #333;z-index:999;}
-    .nav-container{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:15px 20px;}
-    .nav-logo{font-weight:bold;font-size:1.2rem;color:#ffe812;}
-    .nav-menu{list-style:none;margin:0;padding:0;display:flex;gap:20px;}
-    .nav-menu li{position:relative;}
-    .nav-menu li a{color:#fff;text-decoration:none;font-weight:bold;padding:8px 12px;display:block;}
-    .nav-menu li:hover > a{color:#ffe812;}
-    .container{max-width:900px;margin:0 auto;padding:120px 20px 80px 20px;text-align:center;}
-    h1,h2{line-height:1.3;margin-bottom:20px;}
-    table {width:100%;border-collapse:collapse;margin-top:20px;}
-    th, td {border:1px solid #333; padding:10px; text-align:left;color:#fff;}
-    th {background-color:#f5c542;color:#000;}
-    footer{margin-top:100px;font-size:0.85rem;opacity:0.5;}
-    .nav-menu li .dropdown{display:none;position:absolute;top:100%;left:0;background:#161616;border:1px solid #333;border-radius:8px;overflow:hidden;min-width:200px;}
-    .nav-menu li:hover .dropdown{display:block;}
-    .nav-menu li .dropdown a{padding:10px 15px;font-weight:normal;color:#fff;}
-    .nav-menu li .dropdown a:hover{color:#ffe812;}
-  </style>
+<meta charset="UTF-8">
+<title>듀오버스 가격표 | SAKURA TEAM</title>
+<meta name="description" content="SAKURA TEAM 오버워치 승패무관 가격표. 브론즈~챔피언 구간별 가격 확인 가능.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* index.html 스타일과 동일 */
+body{margin:0;font-family:Pretendard, Arial,sans-serif;background:#0e0e0e;color:#fff;}
+header{position:fixed;top:0;width:100%;background:#111;border-bottom:1px solid #333;z-index:999;}
+.nav-container{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:15px 20px;}
+.nav-logo{font-weight:bold;font-size:1.2rem;color:#ffe812;}
+.nav-menu{list-style:none;margin:0;padding:0;display:flex;gap:20px;}
+.nav-menu li{position:relative;}
+.nav-menu li a{color:#fff;text-decoration:none;font-weight:bold;padding:8px 12px;display:block;}
+.nav-menu li:hover > a{color:#ffe812;}
+.nav-menu li .dropdown{display:none;position:absolute;top:100%;left:0;background:#161616;border:1px solid #333;border-radius:8px;overflow:hidden;min-width:200px;}
+.nav-menu li:hover .dropdown{display:block;}
+.nav-menu li .dropdown a{padding:10px 15px;font-weight:normal;color:#fff;}
+.nav-menu li .dropdown a:hover{color:#ffe812;}
+.container{max-width:900px;margin:0 auto;padding:140px 20px 80px 20px;text-align:center;}
+h2{margin-bottom:20px;}
+table{width:100%;border-collapse:collapse;margin-top:10px;}
+th,td{border:1px solid #333;padding:10px;text-align:left;color:#fff;}
+th{background:#f5c542;color:#000;}
+footer{margin-top:100px;font-size:0.85rem;opacity:0.5;}
+@media(max-width:600px){.container{padding:160px 15px 80px 15px;}}
+</style>
 </head>
 <body>
-
 <header>
-  <div class="nav-container">
-    <div class="nav-logo">SAKURA TEAM</div>
-    <ul class="nav-menu">
-      <li><a href="index.html">홈</a></li>
-      <li>
-        <a href="#">가격표 ▾</a>
-        <div class="dropdown">
-          <a href="range.html">구간별 가격표</a>
-          <a href="any.html">듀오버스 가격표</a>
-          <a href="lecture.html">강의 가격표</a>
-        </div>
-      </li>
-    </ul>
-  </div>
+<div class="nav-container">
+<div class="nav-logo">SAKURA TEAM</div>
+<ul class="nav-menu">
+<li><a href="index.html">홈</a></li>
+<li>
+<a href="#">가격표 ▾</a>
+<div class="dropdown">
+<a href="range.html">구간별 가격표</a>
+<a href="any.html">듀오버스 가격표</a>
+<a href="lecture.html">강의 가격표</a>
+</div>
+</li>
+</ul>
+</div>
 </header>
 
 <main class="container">
@@ -57,11 +59,9 @@
     <tr><td>챔피언 5</td><td>13,000 KRW</td></tr>
     <tr><td>챔피언 4 이상</td><td>문의 부탁드립니다</td></tr>
   </table>
-
-  <footer>
-    SAKURA TEAM<br>2021년 사업자 등록 완료 · 상위권 기사단 운영
-  </footer>
+<footer>
+SAKURA TEAM<br>2021년 사업자 등록 완료 · 상위권 기사단 운영
+</footer>
 </main>
-
 </body>
 </html>

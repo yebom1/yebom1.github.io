@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAKURA TEAM | 가격표</title>
+  <title>SAKURA TEAM | 최상위권 강의팀</title>
   <style>
     body {
       font-family: 'Noto Sans KR', sans-serif;
@@ -21,6 +21,10 @@
     header h1 {
       margin: 0;
       font-size: 2em;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
     }
     section {
       padding: 30px;
@@ -53,18 +57,19 @@
       background-color: #ff4d6d;
       color: white;
     }
-    /* 버튼 스타일 */
+    /* 탭 버튼 스타일 */
     .tab-buttons {
       display: flex;
       justify-content: center;
       margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 5px;
     }
     .tab-buttons button {
       background-color: #ff4d6d;
       color: white;
       border: none;
-      padding: 10px 20px;
-      margin: 0 5px;
+      padding: 10px 15px;
       border-radius: 5px;
       cursor: pointer;
       transition: 0.2s;
@@ -104,8 +109,24 @@
   <p>2021년부터 사업자 등록 완료 | 검증된 최상위권 강의팀</p>
 </header>
 
-<section id="tabs">
-  <h2>가격표 선택</h2>
+<section id="intro">
+  <h2>팀 소개</h2>
+  <p>SAKURA TEAM은 현재 챔피언2 이상 유지하는 최상위권 랭커 기사, 현 프로, 전 프로로 구성된 탄탄한 강의팀입니다. 믿고 찾으셔도 되는 검증된 팀입니다.</p>
+</section>
+
+<section id="guide">
+  <h2>서비스 안내</h2>
+  <ul>
+    <li>상위권 전략 상담 제공</li>
+    <li>맞춤형 강의 및 전략 지도</li>
+    <li>최상위 랭커, 전/현 프로 기사 참여</li>
+    <li>정식 사업자 운영, 안전하고 신뢰할 수 있는 강의팀</li>
+  </ul>
+  <a class="button" href="https://open.kakao.com/o/sT0mHkgi" target="_blank">상담 신청하기</a>
+</section>
+
+<section id="pricing">
+  <h2>가격표</h2>
   <div class="tab-buttons">
     <button class="tab-btn active" onclick="showTab('range')">구간별 가격표</button>
     <button class="tab-btn" onclick="showTab('any')">승패무관 가격표</button>
@@ -131,7 +152,7 @@
       <tr><td>그랜드마스터 1</td><td>140,000 KRW</td></tr>
       <tr><td>챔피언 5</td><td>190,000 KRW</td></tr>
       <tr><td>챔피언 4</td><td>240,000 KRW</td></tr>
-      <tr><td>챔피언3 이상</td><td>문의 부탁드립니다</td></tr>
+      <tr><td>챔피언 3 이상</td><td>문의 부탁드립니다</td></tr>
     </table>
   </div>
 
@@ -170,7 +191,6 @@
       <tr><td>챔피언 2 이상</td><td>문의 부탁드립니다</td></tr>
     </table>
   </div>
-
 </section>
 
 <section id="contact">
@@ -182,19 +202,15 @@
 
 <script>
   function showTab(tabId) {
-    // 모든 섹션 숨기기
     const sections = document.querySelectorAll('.price-section');
     sections.forEach(sec => sec.classList.remove('active'));
     
-    // 모든 버튼에서 active 제거
     const buttons = document.querySelectorAll('.tab-btn');
     buttons.forEach(btn => btn.classList.remove('active'));
     
-    // 선택된 탭 활성화
     document.getElementById(tabId).classList.add('active');
     document.querySelector(`button[onclick="showTab('${tabId}')"]`).classList.add('active');
     
-    // 스크롤해서 해당 섹션으로 이동
     document.getElementById(tabId).scrollIntoView({ behavior: 'smooth' });
   }
 </script>

@@ -91,51 +91,6 @@
       font-size: 0.85rem;
       opacity: 0.5;
     }
-
-    /* 가격표 탭 추가 스타일 */
-    .tab-buttons {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .tab-buttons button {
-      background-color: #ffe812;
-      color: #000;
-      border: none;
-      padding: 10px 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.2s;
-    }
-    .tab-buttons button.active, .tab-buttons button:hover {
-      background-color: #f5c542;
-    }
-    .price-section {
-      display: none;
-      margin-top: 20px;
-      text-align: left;
-    }
-    .price-section.active {
-      display: block;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-    th, td {
-      border: 1px solid #333;
-      padding: 10px;
-      text-align: left;
-      color: #fff;
-    }
-    th {
-      background-color: #f5c542;
-      color: #000;
-    }
   </style>
 </head>
 
@@ -190,97 +145,11 @@
       </a>
     </div>
 
-    <!-- 가격표 섹션 시작 -->
-    <div class="section">
-      <h2>가격표</h2>
-      <div class="tab-buttons">
-        <button class="tab-btn active" onclick="showTab('range')">구간별 가격표</button>
-        <button class="tab-btn" onclick="showTab('any')">승패무관 가격표</button>
-        <button class="tab-btn" onclick="showTab('per')">1승당 가격표</button>
-      </div>
-
-      <!-- 구간별 가격표 -->
-      <div id="range" class="price-section active">
-        <table>
-          <tr><th>구간</th><th>가격</th></tr>
-          <tr><td>브론즈</td><td>8,000 KRW</td></tr>
-          <tr><td>실버</td><td>10,000 KRW</td></tr>
-          <tr><td>골드</td><td>13,000 KRW</td></tr>
-          <tr><td>플래티넘</td><td>18,000 KRW</td></tr>
-          <tr><td>다이아 5~4</td><td>23,000 KRW</td></tr>
-          <tr><td>다이아 3~1</td><td>28,000 KRW</td></tr>
-          <tr><td>마스터 5~4</td><td>33,000 KRW</td></tr>
-          <tr><td>마스터 3~1</td><td>38,000 KRW</td></tr>
-          <tr><td>그랜드마스터 5</td><td>58,000 KRW</td></tr>
-          <tr><td>그랜드마스터 4</td><td>78,000 KRW</td></tr>
-          <tr><td>그랜드마스터 3</td><td>95,000 KRW</td></tr>
-          <tr><td>그랜드마스터 2</td><td>110,000 KRW</td></tr>
-          <tr><td>그랜드마스터 1</td><td>140,000 KRW</td></tr>
-          <tr><td>챔피언 5</td><td>190,000 KRW</td></tr>
-          <tr><td>챔피언 4</td><td>240,000 KRW</td></tr>
-          <tr><td>챔피언 3 이상</td><td>문의 부탁드립니다</td></tr>
-        </table>
-      </div>
-
-      <!-- 승패무관 가격표 -->
-      <div id="any" class="price-section">
-        <table>
-          <tr><th>구간</th><th>가격</th></tr>
-          <tr><td>브론즈 ~ 골드</td><td>2,500 KRW</td></tr>
-          <tr><td>플래티넘</td><td>3,500 KRW</td></tr>
-          <tr><td>다이아</td><td>4,500 KRW</td></tr>
-          <tr><td>마스터</td><td>5,000 KRW</td></tr>
-          <tr><td>그랜드마스터 5~4</td><td>6,000 KRW</td></tr>
-          <tr><td>그랜드마스터 3~1</td><td>7,000 KRW</td></tr>
-          <tr><td>챔피언 5</td><td>11,000 KRW</td></tr>
-          <tr><td>챔피언 4 이상</td><td>문의 부탁드립니다</td></tr>
-        </table>
-      </div>
-
-      <!-- 1승당 가격표 -->
-      <div id="per" class="price-section">
-        <table>
-          <tr><th>구간</th><th>가격</th></tr>
-          <tr><td>브론즈~골드</td><td>2,500 KRW</td></tr>
-          <tr><td>플래티넘</td><td>3,500 KRW</td></tr>
-          <tr><td>다이아</td><td>4,000 KRW</td></tr>
-          <tr><td>마스터 5~4</td><td>5,000 KRW</td></tr>
-          <tr><td>마스터 3~1</td><td>6,000 KRW</td></tr>
-          <tr><td>그랜드마스터 5</td><td>8,000 KRW</td></tr>
-          <tr><td>그랜드마스터 4</td><td>11,000 KRW</td></tr>
-          <tr><td>그랜드마스터 3</td><td>14,000 KRW</td></tr>
-          <tr><td>그랜드마스터 2</td><td>18,000 KRW</td></tr>
-          <tr><td>그랜드마스터 1</td><td>25,000 KRW</td></tr>
-          <tr><td>챔피언 5</td><td>40,000 KRW</td></tr>
-          <tr><td>챔피언 4</td><td>60,000 KRW</td></tr>
-          <tr><td>챔피언 3</td><td>80,000 KRW</td></tr>
-          <tr><td>챔피언 2 이상</td><td>문의 부탁드립니다</td></tr>
-        </table>
-      </div>
-    </div>
-    <!-- 가격표 섹션 끝 -->
-
     <footer>
       SAKURA TEAM<br>
       2021년 사업자 등록 완료 · 상위권 기사단 운영
     </footer>
 
   </main>
-
-  <script>
-    function showTab(tabId) {
-      const sections = document.querySelectorAll('.price-section');
-      sections.forEach(sec => sec.classList.remove('active'));
-
-      const buttons = document.querySelectorAll('.tab-btn');
-      buttons.forEach(btn => btn.classList.remove('active'));
-
-      document.getElementById(tabId).classList.add('active');
-      document.querySelector(`button[onclick="showTab('${tabId}')"]`).classList.add('active');
-
-      document.getElementById(tabId).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
-
 </body>
 </html>

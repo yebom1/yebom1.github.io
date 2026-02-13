@@ -1,15 +1,105 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>강의 가격표 | SAKURA TEAM</title>
-<meta name="description" content="SAKURA TEAM 오버워치 전문 강의 가격표. 시간당 25,000 KRW. 개인 코칭, 피드백, 기본기, 심화 운영, 포지션, QnA 가능.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{margin:0;font-family:Pretendard, Arial,sans-serif;background:#0e0e0e;color:#fff;}
-header{position:fixed;top:0;width:100%;background:#111;border-bottom:1px solid #333;z-index:999;}
-.nav-container{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:15px 20px;}
-.nav-logo{font-weight:bold;font-size:1.2rem;color:#ffe812;}
-.nav-menu{list-style:none;margin:0;padding:0;display:flex;gap:20px;}
-.nav-menu li{position:relative;}
-.nav-menu li a{color:#fff;text-decoration:none;font-weight:bold;padding:
+  <meta charset="UTF-8">
+  <title>SAKURA TEAM | 강의 가격표</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO 강화 -->
+  <meta name="description" content="SAKURA TEAM 오버워치 전문 강의. 개인 코칭, 기본기, 심화 운영, 포지션 전략과 모든 Q&A 가능. 시간당 25,000 KRW">
+  <meta name="keywords" content="오버워치 강의, 개인 코칭, SAKURA TEAM, 티어 상담, 전략 강의">
+
+  <!-- OG & Twitter -->
+  <meta property="og:title" content="SAKURA TEAM 오버워치 강의">
+  <meta property="og:description" content="개인 코칭, 기본기, 심화 운영, 포지션 전략 및 Q&A 강의 제공">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sakurateam.github.io/lecture.html">
+  <meta property="og:image" content="og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SAKURA TEAM 오버워치 강의">
+  <meta name="twitter:description" content="개인 코칭 및 전략 강의">
+  <meta name="twitter:image" content="og-image.jpg">
+
+  <!-- JSON-LD 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "SAKURA TEAM 오버워치 강의",
+    "description": "개인 코칭, 기본기, 심화 운영, 포지션 전략 및 모든 Q&A 가능",
+    "url": "https://sakurateam.github.io/lecture.html",
+    "provider": {
+      "@type": "Organization",
+      "name": "SAKURA TEAM"
+    }
+  }
+  </script>
+
+  <style>
+    body { margin:0; font-family:Pretendard, Arial, sans-serif; background:#0e0e0e; color:#fff; }
+    header{position:fixed;top:0;width:100%;background:#111;border-bottom:1px solid #333;z-index:999;}
+    .nav-container{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:15px 20px;}
+    .nav-logo{font-weight:bold;font-size:1.2rem;color:#ffe812;}
+    .nav-menu{list-style:none;margin:0;padding:0;display:flex;gap:20px;}
+    .nav-menu li{position:relative;}
+    .nav-menu li a{color:#fff;text-decoration:none;font-weight:bold;padding:8px 12px;display:block;}
+    .nav-menu li:hover > a{color:#ffe812;}
+    .nav-menu li .dropdown{display:none;position:absolute;top:100%;left:0;background:#161616;border:1px solid #333;border-radius:8px;overflow:hidden;min-width:200px;}
+    .nav-menu li:hover .dropdown{display:block;}
+    .nav-menu li .dropdown a{padding:10px 15px;font-weight:normal;color:#fff;}
+    .nav-menu li .dropdown a:hover{color:#ffe812;}
+    .container{max-width:900px;margin:0 auto;padding:140px 20px 80px 20px;text-align:center;}
+    h1{font-size:2.6rem;line-height:1.3;margin-bottom:20px;}
+    h2{font-size:1.6rem;margin-top:70px;margin-bottom:20px;}
+    p{line-height:1.8;opacity:0.95;}
+    .highlight{font-weight:bold;color:#f5c542;}
+    .section{margin-top:50px;padding:30px;background:#161616;border-radius:14px;border:1px solid #333;}
+    .btn{display:inline-block;margin-top:20px;padding:18px 28px;border-radius:10px;text-decoration:none;font-weight:bold;background:#ffe812;color:#000;transition:0.2s;}
+    .btn:hover{transform:scale(1.05);}
+    footer{margin-top:100px;font-size:0.85rem;opacity:0.5;}
+    @media(max-width:600px){.container{padding:160px 15px 80px 15px;}}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="nav-logo">SAKURA TEAM</div>
+    <ul class="nav-menu">
+      <li><a href="index.html">홈</a></li>
+      <li>
+        <a href="#">가격표 ▾</a>
+        <div class="dropdown">
+          <a href="range.html">구간별 가격표</a>
+          <a href="any.html">듀오버스 가격표</a>
+          <a href="lecture.html">강의 가격표</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<main class="container">
+  <h1>강의 가격표</h1>
+  <div class="section">
+    <p><span class="highlight">시간당 25,000 KRW</span></p>
+    <p>
+      개인 코칭 및 피드백, 기본기, 심화 운영, 포지션 등 오버워치 전문 강의와<br>
+      모든 QnA 질문이 가능합니다.
+    </p>
+  </div>
+
+  <div class="cta">
+    <h2>강의 상담 신청</h2>
+    <p>원하는 시간과 내용에 맞춰 개별 맞춤 강의 진행 가능합니다.</p>
+    <a href="https://open.kakao.com/o/sT0mHkgi" target="_blank" class="btn">카카오톡 오픈채팅 신청</a>
+  </div>
+
+  <footer>
+    SAKURA TEAM<br>2021년 사업자 등록 완료 · 상위권 기사단 운영
+  </footer>
+</main>
+
+</body>
+</html>
